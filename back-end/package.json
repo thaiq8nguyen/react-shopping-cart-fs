@@ -1,0 +1,42 @@
+{
+  "name": "back-end",
+  "version": "1.0.0",
+  "description": "demonstrating a basic functionality of express js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src --out-dir dist",
+    "start": "node dist/index.js",
+    "dev": "nodemon --exec npm run restart",
+    "restart": "rimraf dist && npm run build && npm run start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^3.20.0",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.19.1",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.1",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^2.6.3",
+    "sqlite": "^3.0.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/register": "^7.5.5",
+    "eslint": "^6.1.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-config-standard": "^13.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "prettier": "^1.18.2"
+  }
+}
